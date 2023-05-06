@@ -10,8 +10,9 @@ const App = () => {
         alignItems: "center",
         height: "100vh",
         width: "100%",
-        background:'lightgreen'
+        background: "lightgreen",
       }}>
+      <h2>Auto collapsible accordion</h2>
       <MainPage />
     </div>
   );
