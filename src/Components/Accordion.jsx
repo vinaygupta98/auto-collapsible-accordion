@@ -2,7 +2,7 @@ import React from "react";
 import AccordionItem from "./AccordionItem";
 import AccordionPanel from "./AccordionPanel";
 import AccordionToggle from "./AccordionToggle";
-
+export const DEFAULT_DELAY = 5000;
 const Accordion = ({ defaultActive, children }) => {
   const [activeIndex, setActiveIndex] = React.useState(defaultActive ?? "1");
   const onClick = (id) =>
@@ -15,9 +15,9 @@ const Accordion = ({ defaultActive, children }) => {
             ? String(Number(prev) + 1)
             : "1"
           : "1";
-        return abc; 
+        return abc;
       });
-    }, 5000);
+    }, DEFAULT_DELAY);
   }, [activeIndex, children.length]);
   return (
     <div
