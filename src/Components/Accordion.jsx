@@ -15,10 +15,10 @@ const Accordion = ({ defaultActive, children }) => {
             ? String(Number(prev) + 1)
             : "1"
           : "1";
-        return abc;
+        return abc; 
       });
     }, 5000);
-  }, [activeIndex]);
+  }, [activeIndex, children.length]);
   return (
     <div
       className="accordion"
