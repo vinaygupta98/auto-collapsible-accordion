@@ -9,7 +9,7 @@ const AccordionItem = ({ children, activeIndex, length, id, ...props }) => {
         borderBottom:
           Number(length) === Number(id) - 1 || id === "1"
             ? "none"
-            : "1px solid violet",
+            : "1px solid lightgray",
         borderTop: id === activeIndex ? "2px solid violet" : "1px solid lightgray",
         padding: "10px",
       }}>
