@@ -8,7 +8,7 @@ const Accordion = ({ defaultActive, children }) => {
   const onClick = (id) =>
     activeIndex === id ? setActiveIndex(null) : setActiveIndex(id);
   React.useEffect(() => {
-    setTimeout(() => {
+    let timeId = setTimeout(() => {
       setActiveIndex((prev) => {
         let abc = prev
           ? String(children.length) !== prev
@@ -17,6 +17,7 @@ const Accordion = ({ defaultActive, children }) => {
           : "1";
         return abc;
       });
+      return () => clearTimeout(timeId);
     }, DEFAULT_DELAY);
   }, [activeIndex, children.length]);
   return (

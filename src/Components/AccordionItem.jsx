@@ -4,9 +4,10 @@ import { DEFAULT_DELAY } from "./Accordion";
 const AccordionItem = ({ children, activeIndex, length, id, ...props }) => {
   const [width, setWidth] = React.useState(0);
   useEffect(() => {
-    setInterval(() => {
+    let timeId = setInterval(() => {
       setWidth((prev) => prev + 1);
-    }, DEFAULT_DELAY / 50);
+    }, DEFAULT_DELAY / 100);
+    return () => clearInterval(timeId);
   }, []);
   useEffect(() => {
     setWidth(0);
