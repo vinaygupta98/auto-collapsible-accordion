@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/auto-collapsible-accordion/static/css/main.e6c13ad2.css",
-    "main.js": "/auto-collapsible-accordion/static/js/main.930c0113.js",
+    "main.js": "/auto-collapsible-accordion/static/js/main.91cea7f6.js",
     "static/js/787.264fc0c5.chunk.js": "/auto-collapsible-accordion/static/js/787.264fc0c5.chunk.js",
     "index.html": "/auto-collapsible-accordion/index.html",
     "main.e6c13ad2.css.map": "/auto-collapsible-accordion/static/css/main.e6c13ad2.css.map",
-    "main.930c0113.js.map": "/auto-collapsible-accordion/static/js/main.930c0113.js.map",
+    "main.91cea7f6.js.map": "/auto-collapsible-accordion/static/js/main.91cea7f6.js.map",
     "787.264fc0c5.chunk.js.map": "/auto-collapsible-accordion/static/js/787.264fc0c5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.930c0113.js"
+    "static/js/main.91cea7f6.js"
   ]
 }
